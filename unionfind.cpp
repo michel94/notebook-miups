@@ -1,3 +1,5 @@
+// UNION-FIND IMPLEMENTATION
+
 #include <stdio.h>
 
 int parent(int v){
