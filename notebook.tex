@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[cm]{fullpage}
+\newcommand{\includecode}[2][c]{\lstinputlisting[caption=#2, escapechar=, style=custom#1]{#2}}
+
+\definecolor{keyword}{RGB}{217, 31, 18}
+
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  xleftmargin=\parindent,
+  language=C++,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{keyword},
+  commentstyle=\itshape\color{gray},
+  identifierstyle=\color{black},
+  stringstyle=\color{orange},
+}
+
+\lstset {
+    language=C++,
+    backgroundcolor=\color{black!5}, % set backgroundcolor
+    basicstyle=\footnotesize,% basic font setting
+}
+
+\begin{document}
+\section{STL}
+\includecode{sorts.cpp}
+\includecode{bsearch.cpp}
+%precisa aqui do operator para priority_queues e assim
+
+\newpage
+\section{Others}
+\includecode{bitset.cpp}
+
+\newpage
+\section{Graphs}
+\includecode{ArticulationPoints.cpp}
+\includecode{BipartiteMatching.cpp}
+\includecode{MST.cpp}
+\includecode{unionfind.cpp}
+
+\newpage
+\section{Geometry}
+\includecode{AreaPerimeterIntersection.cpp}
+\includecode{CW+Intersect.cpp}
+\includecode{GrahamScanAlgorithm.txt}
+
+
+\end{document}
